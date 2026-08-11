@@ -38,7 +38,7 @@
 ├── .gitignore                    # Environment & artifact ignore rules
 ├── requirements.txt              # Environment dependencies
 └── README.md                     # Project documentation
-🚀 Quickstart Guide1. Prerequisites & InstallationEnsure Python 3.10+ is installed on your system.PowerShellgit clone [https://github.com/Rabiya1610/customer-intelligence-platform.git](https://github.com/Rabiya1610/customer-intelligence-platform.git)
+🚀 Quickstart Guide1. Prerequisites & InstallationEnsure Python 3.10+ is installed on your system.PowerShellgit clone https://github.com/Rabiya1610/customer-intelligence-platform.git
 cd customer-intelligence-platform
 
 python -m venv .venv
@@ -50,5 +50,5 @@ Step B: Model Training & TuningPowerShellpython src/models/train_model.py
 Step C: Evaluate ExplainabilityPowerShellpython src/models/evaluate_explainability.py
 Step D: Batch Inference PipelinePowerShellpython src/models/predict_batch.py
 3. Launching Applications & ServicesOption A: FastAPI Real-Time ServicePowerShellpython -m uvicorn src.api.main:app --reload --port 8000
-Interactive Swagger Docs: http://127.0.0.1:8000/docsHealth Check Endpoint: http://127.0.0.1:8000/healthPrediction Endpoint: POST http://127.0.0.1:8000/predictOption B: Streamlit Web DashboardPowerShellpython -m streamlit run src/visualization/dashboard.py
+Interactive Swagger Docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)Health Check Endpoint: [http://127.0.0.1:8000/health](http://127.0.0.1:8000/health)Prediction Endpoint: POST [http://127.0.0.1:8000/predict](http://127.0.0.1:8000/predict)Option B: Streamlit Web DashboardPowerShellpython -m streamlit run src/visualization/dashboard.py
 Dashboard Access: http://localhost:8501📊 Model Evaluation & MetricsMetric / ParameterValue / FindingROC-AUC Score0.9953Validation StrategyStratified 5-Fold Cross-ValidationTop Churn DriversContract Type (34.6%), Ticket Ratio (17.7%), Monthly Charges (11.7%)Key Behavioral Insight: Feature importance analysis revealed that the engineered ticket_ratio ($\frac{\text{support\_tickets\_30d}}{\text{tenure\_months}}$) was over 3x more predictive than raw ticket counts alone, proving that customer frustration relative to tenure is the strongest driver of churn.🛠️ Tech StackCategoryTechnologiesMachine LearningXGBoost, Scikit-Learn, Joblib, NumPyData ProcessingPandasAPI & Web ServicesFastAPI, Uvicorn, PydanticVisualization & UIStreamlit, PlotlyVersion ControlGit, GitHub
