@@ -36,7 +36,7 @@ An enterprise-grade, end-to-end Machine Learning system engineered to predict, e
 
 ## 📁 Project Structure
 
-
+`
 customer-intelligence-platform/
 │
 ├── data/
@@ -65,7 +65,7 @@ customer-intelligence-platform/
 ├── .gitignore                    # Environment & artifact ignore rules
 ├── requirements.txt              # Environment dependencies
 └── README.md                     # Project documentation
-
+`
 
 ---
 
