@@ -36,36 +36,28 @@ An enterprise-grade, end-to-end Machine Learning system engineered to predict, e
 
 ## 📁 Project Structure
 
-`
 customer-intelligence-platform/
-│
 ├── data/
-│   ├── raw/                      # Raw customer datasets
-│   └── processed/                # Transformed feature matrices & predictions
-│
+│   ├── raw/
+│   └── processed/
 ├── models/
-│   ├── xgboost_churn_model.pkl   # Serialized trained model artifact
-│   └── .gitkeep
-│
+│   └── xgboost_churn_model.pkl
 ├── notebooks/
-│   └── 01_exploratory_data_analysis.py  # EDA, distributions, and class auditing
-│
+│   └── 01_exploratory_data_analysis.py
 ├── src/
-│   ├── features/
-│   │   └── build_features.py            # Feature engineering & scaling pipeline
-│   ├── models/
-│   │   ├── train_model.py               # Model training & Stratified CV grid search
-│   │   ├── evaluate_explainability.py   # Feature importance extraction
-│   │   └── predict_batch.py             # Batch scoring engine & risk categorization
 │   ├── api/
-│   │   └── main.py                      # FastAPI real-time REST microservice
+│   │   └── main.py
+│   ├── features/
+│   │   └── build_features.py
+│   ├── models/
+│   │   ├── evaluate_explainability.py
+│   │   ├── predict_batch.py
+│   │   └── train_model.py
 │   └── visualization/
-│       └── dashboard.py                 # Interactive Streamlit web application
-│
-├── .gitignore                    # Environment & artifact ignore rules
-├── requirements.txt              # Environment dependencies
-└── README.md                     # Project documentation
-`
+│       └── dashboard.py
+├── .gitignore
+├── README.md
+└── requirements.txt
 
 ---
 
